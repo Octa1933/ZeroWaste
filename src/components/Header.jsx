@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
   return (
     <>
       <header className="header d-flex align-items-center">
@@ -11,16 +13,16 @@ function Header() {
           <nav className="navbar" style={{ marginRight: "40%" }}>
             <ul>
               <li>
-                <a href="../pages/">Beranda</a>
+                <a href="/beranda">Beranda</a>
               </li>
               <li>
-                <a href="../pages/tentang">Tentang Kami</a>
+                <a href="/tentang">Tentang Kami</a>
               </li>
               <li>
-                <a href="../pages/layanan">Layanan</a>
+                <a href="/layanan">Layanan</a>
               </li>
               <li>
-                <a href="../pages/berita">Berita</a>
+                <a href="/berita">Berita</a>
               </li>
               {/* <a
                 href="#about"
@@ -29,8 +31,11 @@ function Header() {
               >
                 Request Pickup
               </a> */}
-              <button className="buttonpickup" href="../pages/login">
-                Request PickUp
+              <button
+                className="buttonpickup"
+                onClick={() => navigate("/loginpage")}
+              >
+                Masuk
               </button>
               {/* <a href="login.html" className="buttonsign">
                 Hallo, Sign Disini!

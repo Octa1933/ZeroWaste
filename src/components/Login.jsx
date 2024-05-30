@@ -68,11 +68,6 @@ function Login() {
                   </a>
                 </span>
               </div>
-              <div className="text-center p-t-0 p-b-10">
-                <span className="txt3">
-                  ----------------Atau lanjut dengan--------------------
-                </span>
-              </div>
               <div className="login100-form-social flex-c-m">
                 <a
                   href="#"

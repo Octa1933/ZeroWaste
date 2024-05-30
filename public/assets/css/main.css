@@ -2114,7 +2114,10 @@ section {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 2px 28px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 50px;
   transition: 0.3s;
   color: #309434;
