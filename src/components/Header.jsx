@@ -10,7 +10,7 @@ function Header() {
           <a href="" className="logo d-flex align-items-center">
             <h1>ZeroWaste</h1>
           </a>
-          <nav className="navbar" style={{ marginRight: "40%" }}>
+          <nav className="navbar">
             <ul>
               <li>
                 <a href="/beranda">Beranda</a>

@@ -297,6 +297,7 @@ section {
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
+    margin-right: 40%;
   }
 
   .navbar ul {
@@ -3203,4 +3204,143 @@ section {
     position: static;
     left: auto;
   }
+}
+
+/* LOGIN */
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1-login {
+  color: #309434;
+}
+
+.h4-login {
+  font-size: 20px;
+}
+
+.left-section {
+  background-image: url(/public/assets/Login/images/bglogin.png);
+  background-size: cover;
+  border-bottom-right-radius: 80px;
+}
+
+.left-section,
+.right-section {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-page {
+  display: flex;
+  align-items: center;
+}
+
+.register-page p,
+.register-page a {
+  margin: 0 5px; /* Optional: Adjust spacing between elements */
+}
+
+.register-page a {
+  color: blue; /* Optional: Style the link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-page a:hover {
+  text-decoration: underline;
+}
+
+.left-section .content-box {
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.left-section .h1-login {
+  text-align: left;
+}
+
+.left-section .h4-login {
+  text-align: left;
+}
+
+.header-login {
+  font-size: 1.125rem; /* equivalent to text-lg */
+  font-weight: 600; /* equivalent to font-semibold */
+}
+
+.input-group {
+  padding-top: 1rem; /* equivalent to py-4 */
+}
+
+.input-field {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 50px; /* equivalent to rounded */
+  width: 100%;
+  padding: 0.5rem 0.75rem; /* equivalent to py-2 px-3 */
+  background-color: #eee;
+  color: #4a4a4a; /* equivalent to text-gray-700 */
+  line-height: 1.25; /* equivalent to leading-tight */
+  outline: none;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* equivalent to focus:shadow-outline */
+}
+
+.button-group {
+  padding: 1rem; /* equivalent to p-4 */
+}
+
+.submit-button {
+  background-color: #de9455;
+  color: white;
+  font-weight: 700; /* equivalent to font-bold */
+  padding: 0.5rem 4rem; /* equivalent to py-2 px-16 */
+  border-radius: 9999px; /* equivalent to rounded-full */
+  font-size: 1rem; /* equivalent to font-semibold */
+}
+
+.login-button {
+  background-color: #309434;
+  color: white;
+  font-weight: 700; /* equivalent to font-bold */
+  padding: 0.5rem 4rem; /* equivalent to py-2 px-16 */
+  border-radius: 9999px; /* equivalent to rounded-full */
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #d68b4b;
+}
+
+.logo-container {
+  max-width: 18rem; /* equivalent to max-w-72 */
+}
+
+.register-button-container,
+.login-link-container {
+  padding: 1rem; /* equivalent to p-4 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-link {
+  color: black;
+}
+
+.logo-login {
+  height: auto; /* h-auto */
+  width: 100%; /* w-full */
+  max-width: 18rem;
 }

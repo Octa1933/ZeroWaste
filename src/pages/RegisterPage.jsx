@@ -7,7 +7,6 @@ function RegisterPage() {
     <>
       <Header />
       <Register />
-      <Login />
     </>
   );
 }
