@@ -1,20 +1,21 @@
-const mysql = require("mysql");
+const mysql = require("mysql2/promise");
 
-const db = mysql.createConnection({
+const Db = mysql.createPool({
   host: "localhost",
+  port: 3306,
   user: "root",
   password: "",
   database: "zerowaste",
 });
 
-db.connect((err) => {
-  if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
+async function testConnection() {
+  try {
+    await Db.getConnection();
+    console.log("Koneksi ke database berhasil!!!");
+  } catch (error) {
+    console.log("koneksi gagal", error);
   }
-  console.log("connected as id " + db.threadId);
-});
-
+}
 async function query(query, value) {
   try {
     const [excekuteQuery] = await Db.query(query, value ?? []);
@@ -26,5 +27,5 @@ async function query(query, value) {
 
 module.exports = {
   query,
-  db,
+  testConnection,
 };

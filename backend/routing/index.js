@@ -1,8 +1,8 @@
 const express = require("express");
-const app = express();
-const User = require("./authuser");
-const baseapi = "/api/v1";
+const route = express();
+const authUser = require("./authuser");
 
-app.use(baseapi, User);
+const baseUrl = "/api/v1";
+route.use(baseUrl, authUser);
 
-module.exports = app;
+module.exports = route;
